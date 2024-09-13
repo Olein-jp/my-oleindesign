@@ -1,0 +1,86 @@
+.is-style-bg-gradient-animation-01,
+.is-style-bg-gradient-animation-02,
+.is-style-bg-gradient-animation-03,
+.is-style-bg-gradient-animation-04 {
+  background-size: 400% 400%;
+  animation: gradient-regular 30s ease infinite;
+}
+
+.is-style-bg-gradient-animation-01 {
+  background-image: linear-gradient(to right bottom, #ffffff, #fdfdfd, #fbfbfb, #f9f9f9, #f7f7f7, #e7e6ed, #d7d6e3, #c7c6d9, #a2a5c5, #7b85b2, #4f689f, #044d8c);
+}
+
+.is-style-bg-gradient-animation-02 {
+  background-image: linear-gradient(to right top, #091b40, #0b2149, #0c2853, #0c2f5c, #0b3666, #333e77, #544485, #76488f, #b84689, #ea506e, #ff7445, #faa500);
+}
+
+.is-style-bg-gradient-animation-03 {
+  background-image: linear-gradient(to right top, #091b40, #49275d, #8a2d68, #c43a5f, #ec5e46, #f2604b, #f7634f, #fd6554, #dc4a79, #a3468e, #5e478c, #074073);
+}
+
+.is-style-bg-gradient-animation-04 {
+  background-image: linear-gradient(to right top, #faa500, #f46f3b, #d44459, #9e3067, #5f2a63, #5f2a63, #5f2a63, #5f2a63, #9e3067, #d44459, #f46f3b, #faa500);
+}
+
+.is-style-color-gradient-animation-01 {
+  background: linear-gradient(-45deg, #044D8C, #022340, #A3B2BF, #03588C, #024873);
+  background-size: 500% auto;
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradient-reverse 30s linear infinite;
+}
+
+@keyframes gradient-regular {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-reverse {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/*--------------------------------------------------------------
+    サイトタイトル
+--------------------------------------------------------------*/
+.wp-block-site-logo+.wp-block-site-title {
+  display: block !important;
+}
+
+/*--------------------------------------------------------------
+    メールマガジン登録フォーム
+--------------------------------------------------------------*/
+.olein-design-mm-register {
+  input[type=text] {
+    width: 100%;
+    border-radius: 0px;
+  }
+  input[type=button] {
+    margin-top: 10px;
+    width: 100%;
+    background: var( --wp--preset--color--custom-accent-01 );
+    border: none;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
